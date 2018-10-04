@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// DB object needs to be placed above the routers b/c **EXPRESS middleware is SEQUETIAL
+// DB object needs to be placed above the routers b/c **EXPRESS middleware is SEQUENTIAL
 app.use(function (req, res, next) {
     req.db = db;
     next();

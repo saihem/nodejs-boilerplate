@@ -67,7 +67,6 @@ function showUserInfo(event) {
 
 };
 
-
 // Add User
 function addUser(event) {
   event.preventDefault();
